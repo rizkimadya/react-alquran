@@ -45,13 +45,15 @@ const Home = () => {
         <React.Fragment>
             <LayoutWeb>
                 <div className="row home">
-                    <div className="col-12">
+                    <div className="col-12 mb-4">
                         <div className="card p-3 shadow text-center" style={{ border: "none" }}>
                             <img src={Logo} alt="" className='mx-auto' style={{ width: "30%" }} />
                             <p className='mt-3' style={{ color: "#57662F" }}>PWA Al-Qur'an HORI20N<br /> Sistem Informasi Angkatan 2020</p>
                         </div>
-                        <form action="">
-                            <div className="input-groups bg-white mt-md-5 mt-4 mb-3">
+                    </div>
+                    <div className="col-12 bg-white pt-4 pb-3" style={{ position: "sticky", top: "60px", zIndex: 999 }}>
+                        <form>
+                            <div className="input-groups">
                                 <i className="bi bi-search"></i>
                                 <input
                                     required

@@ -35,7 +35,7 @@ const DetailSurah = () => {
                 {!loading ? (
                     <div className="row">
                         <div className="col-12">
-                            <div className="d-md-flex gap-3 justify-content-between">
+                            <div className="d-flex gap-3 justify-content-between">
                                 {detailSurah && detailSurah.surat_sebelumnya && (
                                     <Link
                                         to={`/surah/${detailSurah.surat_sebelumnya.nomor}`}
