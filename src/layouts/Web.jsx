@@ -24,7 +24,7 @@ const LayoutWeb = ({ children }) => {
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'fixed', bottom: '24px', left: '0', right: '0', }}>
                                     {splitLocation[1] === "surah" && 
                                         <Link to="/">
-                                            <i style={{background:"#57662F", color:"#fff", padding:"7px 8px", borderRadius:"50%", fontSize:"20px"}} class="bi bi-house shadow"></i>
+                                            <i style={{background:"#57662F", color:"#fff", padding:"7px 8px", borderRadius:"50%", fontSize:"20px"}} className="bi bi-house shadow"></i>
                                         </Link>
                                     }
                                 </div>
