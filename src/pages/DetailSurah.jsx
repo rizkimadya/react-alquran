@@ -4,6 +4,7 @@ import { Link, useParams } from 'react-router-dom'
 import Api from '../api';
 import CardHeaderDetail from '../components/CardHeaderDetail';
 import { Spinner } from 'react-bootstrap';
+import CardAyat from '../components/CardAyat';
 
 const DetailSurah = () => {
     document.title = "Al Qur'an";
@@ -58,6 +59,11 @@ const DetailSurah = () => {
                             </div>
                         </div>
                         <CardHeaderDetail nama_latin={detailSurah.nama_latin} nama={detailSurah.nama} linkAudio={detailSurah.audio} jumlah_ayat={detailSurah.jumlah_ayat} tempat={detailSurah.tempat_turun} />
+                        {detailSurah && detailSurah.ayat && detailSurah.ayat.map(ayat => (
+                            <div key={ayat.nomor}>
+                                <CardAyat nomor={ayat.nomor} ar={ayat.ar} tr={ayat.tr} idn={ayat.idn}/>
+                            </div>
+                        ))}
                     </div>
                 ) : (
                     <div className="d-flex mx-auto justify-content-center mt-5">
